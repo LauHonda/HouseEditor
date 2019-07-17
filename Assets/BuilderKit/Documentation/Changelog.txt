@@ -1,0 +1,36 @@
+v3.0
+- Updated post processing stack profile for newer Unity versions.
+
+- New UI elements.
+
+- Save and Load functionality.
+
+- Materials are now located under the Resources folder.
+
+- PlaceableObject.Place() now has to return a list of all the objects that were placed in the scene in each call.
+
+- Support for modal dialogs in BuilderController.
+
+- Fixed a bug that prevented placing multi tile objects on upper floors sometimes.
+
+
+
+v2.0
+- Windows are now set up differently, they require a wall mesh cut out to fit it. This takes a bit more effort to create but improves quality significantly and also removes a small glitch that allowed you to see through some walls with the shader we were using before. The shader is still included with the package for backwards compatibility but will be removed in upcoming releases.
+
+- Floor tiles now work differently and have placing rules for any floor above ground (must be next to a wall or another tile to build).
+
+- Added Support for multiple floors.
+
+- The map has now a fixed size and boundaries,
+
+- Support for common objects that take more than one floor. See the stairs for an example.
+
+- Added a couple of configurable parameters on the BuilderKitConfig class.
+
+- Selection area now adjusts to the size of the selected object.
+
+- New building grid, that changes visibility automatically.
+
+- Work done towards painting rooms with a single click, will be ready in the next couple of days.
+
