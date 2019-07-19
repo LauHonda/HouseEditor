@@ -2329,7 +2329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015257533, y: 117.000084}
+  m_AnchoredPosition: {x: -0.000015257533, y: 117.00004}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1347654206
@@ -3096,30 +3096,29 @@ PrefabInstance:
       propertyPath: tiltAngleMax
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 3557530408523502037, guid: ad27913e4c8c60946b82a3c76d3f9549,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: OnPickableTransformMoveEnded.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3557530408523502037, guid: ad27913e4c8c60946b82a3c76d3f9549,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: OnPickableTransformMoved.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3557530408523502037, guid: ad27913e4c8c60946b82a3c76d3f9549,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: OnPickableTransformMoveStarted.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3557530408523502037, guid: ad27913e4c8c60946b82a3c76d3f9549,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: OnPickableTransformDeselected.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3557530408523502037, guid: ad27913e4c8c60946b82a3c76d3f9549,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: OnPickableTransformSelected.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad27913e4c8c60946b82a3c76d3f9549, type: 3}
@@ -3396,6 +3395,45 @@ MonoBehaviour:
     type: 2}
   placingEnabled: 1
   modalOpen: 0
+  OnPickableTransformMoved:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BitBenderGames.UnityEventWithTransform, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  requireLongTapForMove: 0
+  OnPickableTransformSelected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BitBenderGames.UnityEventWithTransform, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  repeatEventSelectedOnClick: 1
+  OnPickableTransformSelectedExtended:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BitBenderGames.UnityEventWithPickableSelected, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPickableTransformDeselected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BitBenderGames.UnityEventWithTransform, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  isMultiSelectionEnabled: 0
+  deselectPreviousColliderOnClick: 1
+  snapAngle: 0
+  snapToGrid: 1
+  snapOffset: {x: 0, y: 0}
+  snapUnitSize: 1
+  OnPickableTransformMoveEnded:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BitBenderGames.UnityEventWithPositionAndTransform, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  useLegacyTransformMovedEventOrder: 0
+  OnPickableTransformMoveStarted:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: BitBenderGames.UnityEventWithTransform, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!4 &1985554841
 Transform:
   m_ObjectHideFlags: 0
@@ -3701,7 +3739,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 233418492}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.60999954
+  m_Size: 0.61
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

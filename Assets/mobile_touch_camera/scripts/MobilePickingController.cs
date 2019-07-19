@@ -539,6 +539,7 @@ namespace BitBenderGames
         private void InputControllerOnDragUpdate(Vector3 dragPosStart, Vector3 dragPosCurrent, Vector3 correctionOffset)
         {
 
+            //Debug.LogError(dragPosCurrent);
             if (CurrentlyDraggedTransform != null)
             {
 

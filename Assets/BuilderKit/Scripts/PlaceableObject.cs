@@ -28,7 +28,15 @@ public abstract class PlaceableObject : MonoBehaviour {
   public float yPosition = 0.02f;
 
 
-  void Start() {
+    [SerializeField]
+    [Tooltip("When snapping is enabled, this value defines a position offset that is added to the center of the object when dragging. Note that this value is added on top of the snapOffset defined in the MobilePickingController. When a top-down camera is used, these 2 values are applied to the X/Z position.")]
+    private Vector2 localSnapOffset = Vector2.zero;
+ 
+
+    public Vector2 LocalSnapOffset { get { return (localSnapOffset); } }
+
+
+    void Start() {
     Init();
   }
 
